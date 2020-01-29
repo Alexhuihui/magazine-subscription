@@ -9,6 +9,8 @@
         <module>magazine-subscription-eureka</module>
         <module>magazine-subscription-zuul</module>
         <module>magazine-subscription-service</module>
+        <module>magazine-subscription-common</module>
+        <module>magazine-subscription-common</module>
     </modules>
 
     <name>magazine-subscription</name>

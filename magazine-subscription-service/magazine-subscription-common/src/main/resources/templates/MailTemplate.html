@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>亲爱的<span th:text="${userName}"></span>，您好：</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;以下是您订阅的最新内容，请查收：</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span th:text="${message}"></span></p>
+</body>
+</html>
