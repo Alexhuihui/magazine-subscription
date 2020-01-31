@@ -52,7 +52,7 @@ public class MailServiceImpl implements MailService {
             mailSender.send(message);
             log.info("<magazine-subscription-mail>: Text 邮件已经发送给 -> {}，标题是 -> {}", mailInfo.getToAddr(), mailInfo.getTitle());
         } catch (Exception e) {
-            log.error("<magazine-subscription-mail>: 发送 Text 邮件给 -> {} 时发生异常！", mailInfo.getToAddr(), e);
+            log.error("<magazine-subscription-mail>: 发送 Text 邮件给 -> {} 时发生异常！异常信息 -> {}", mailInfo.getToAddr(), e);
         }
     }
 
@@ -81,7 +81,7 @@ public class MailServiceImpl implements MailService {
             mailSender.send(message);
             log.info("<magazine-subscription-mail>: Html 邮件已经发送给 -> {}，标题是 -> {}", mailInfo.getToAddr(), mailInfo.getTitle());
         } catch (MessagingException e) {
-            log.error("<magazine-subscription-mail>: 发送 Html 邮件给 -> {} 时发生异常！", mailInfo.getToAddr(), e);
+            log.error("<magazine-subscription-mail>: 发送 Html 邮件给 -> {} 时发生异常！异常信息 -> {}", mailInfo.getToAddr(), e);
         }
     }
 
@@ -113,7 +113,7 @@ public class MailServiceImpl implements MailService {
             mailSender.send(message);
             log.info("<magazine-subscription-mail>: 带附件的邮件已经发送给 -> {}，标题是 -> {}", mailInfo.getToAddr(), mailInfo.getTitle());
         } catch (MessagingException e) {
-            log.error("<magazine-subscription-mail>: 发送带附件的邮件给 -> {} 时发生异常！", mailInfo.getToAddr(), e);
+            log.error("<magazine-subscription-mail>: 发送带附件的邮件给 -> {} 时发生异常！异常信息 -> {}", mailInfo.getToAddr(), e);
         }
     }
 
@@ -144,7 +144,7 @@ public class MailServiceImpl implements MailService {
             mailSender.send(message);
             log.info("<magazine-subscription-mail>: 嵌入静态资源的邮件已经发送给 -> {}，标题是 -> {}", mailInfo.getToAddr(), mailInfo.getTitle());
         } catch (MessagingException e) {
-            log.error("<magazine-subscription-mail>: 发送嵌入静态资源的邮件给 -> {} 时发生异常！", mailInfo.getToAddr(), e);
+            log.error("<magazine-subscription-mail>: 发送嵌入静态资源的邮件给 -> {} 时发生异常！异常信息 -> {}", mailInfo.getToAddr(), e);
         }
     }
 }
